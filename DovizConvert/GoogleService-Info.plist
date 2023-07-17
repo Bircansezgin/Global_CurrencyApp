@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1061699117803-sljf4aupl0iiploke4it7m9abrl1u46b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1061699117803-sljf4aupl0iiploke4it7m9abrl1u46b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBa_TVgeQILrxORwUCPmUt2lrvIvoJjftE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1061699117803</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>softrestart.DovizConvert</string>
+	<key>PROJECT_ID</key>
+	<string>dovizconvert-6d934</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dovizconvert-6d934.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1061699117803:ios:b8745f35290ace727c94ae</string>
+	<key>DATABASE_URL</key>
+	<string>https://dovizconvert-6d934-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
