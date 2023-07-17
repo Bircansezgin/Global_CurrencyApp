@@ -105,7 +105,7 @@ class ViewController2: UIViewController, GADFullScreenContentDelegate {
             paragraphStyle.alignment = .center
     
 
-            let messageText = "\n\(formattedInputMoney) $ = \(formattedToplam) \(moneyBirim)\n ----------------------------\n \(formattedToplam) \(moneyBirim) = \(formattedInputMoney)$  \n\n\n\n\n\nUpdated Date: \(lastUpdate)"
+            let messageText = "\n\(formattedInputMoney) $ = \(formattedToplam) \(moneyBirim)\n ----------------------------\n \(formattedToplam) \(moneyBirim) = \(formattedInputMoney)$  \n\n\n\nUpdated Date: \(lastUpdate)"
 
             let attributedString = NSAttributedString(string: messageText, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
 
