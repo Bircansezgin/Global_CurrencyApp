@@ -67,7 +67,7 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
         
         searchBar.delegate = self
         
-        
+        // Api Key Islem!
         DispatchQueue.global().async {
             self.fetchAPIkey(complition: { Apikey in
                 DispatchQueue.main.async {
@@ -104,7 +104,8 @@ class ViewController: UIViewController, GADFullScreenContentDelegate {
             self.startApi()
         }
         
-        
+       
+        // TableView no see and just close keyboard!
         let gesture = UITapGestureRecognizer(target: self, action: #selector(turnOffAll))
         gesture.cancelsTouchesInView = false
         view.addGestureRecognizer(gesture)
