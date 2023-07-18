@@ -12,6 +12,7 @@
 		84026FF02A35560800AECBF5 /* currentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84026FEF2A35560800AECBF5 /* currentClass.swift */; };
 		84026FF22A3557C100AECBF5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84026FF12A3557C100AECBF5 /* ViewController2.swift */; };
 		841732752A5D550C00485E0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841732742A5D550C00485E0F /* GoogleService-Info.plist */; };
+		841CFD1E2A66C2D700B98506 /* CalculateCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CFD1D2A66C2D700B98506 /* CalculateCurrencyViewController.swift */; };
 		8463114A2A65A6D600A4D4F2 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846311492A65A6D600A4D4F2 /* UIImage+Ext.swift */; };
 		8463114C2A65A77E00A4D4F2 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463114B2A65A77E00A4D4F2 /* LoadingViewController.swift */; };
 		8463114E2A65AB6800A4D4F2 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463114D2A65AB6800A4D4F2 /* LaunchScreenViewController.swift */; };
@@ -58,6 +59,7 @@
 		84026FEF2A35560800AECBF5 /* currentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentClass.swift; sourceTree = "<group>"; };
 		84026FF12A3557C100AECBF5 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		841732742A5D550C00485E0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		841CFD1D2A66C2D700B98506 /* CalculateCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateCurrencyViewController.swift; sourceTree = "<group>"; };
 		846311492A65A6D600A4D4F2 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		8463114B2A65A77E00A4D4F2 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		8463114D2A65AB6800A4D4F2 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				848F26FA2A1FDA6C00881C94 /* AppDelegate.swift */,
 				848F26FC2A1FDA6C00881C94 /* SceneDelegate.swift */,
 				848F26FE2A1FDA6C00881C94 /* ViewController.swift */,
+				841CFD1D2A66C2D700B98506 /* CalculateCurrencyViewController.swift */,
 				84951F702A37C9B6003A37AC /* cellViewController.swift */,
 				84951F722A37D502003A37AC /* gecisDoor.swift */,
 				84026FF12A3557C100AECBF5 /* ViewController2.swift */,
@@ -350,6 +353,7 @@
 				848F26FB2A1FDA6C00881C94 /* AppDelegate.swift in Sources */,
 				84026FF02A35560800AECBF5 /* currentClass.swift in Sources */,
 				8463114E2A65AB6800A4D4F2 /* LaunchScreenViewController.swift in Sources */,
+				841CFD1E2A66C2D700B98506 /* CalculateCurrencyViewController.swift in Sources */,
 				848F26FD2A1FDA6C00881C94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
