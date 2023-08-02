@@ -8,6 +8,8 @@
 import UIKit
 import GoogleMobileAds
 import OneSignal
+import AppTrackingTransparency
+import AdSupport
 import Firebase
 
 @main
@@ -19,15 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         FirebaseApp.configure()
         
-        // Remove this method to stop OneSignal Debugging
+        
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         
-        // OneSignal initialization
+        
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("ee20923b-3358-41ba-b8e9-f88d007ca024")
+ 
         
-        // promptForPushNotifications will show the native iOS notification permission prompt.
-        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
         OneSignal.promptForPushNotifications(userResponse: { accepted in
           print("User accepted notifications: \(accepted)")
         })
@@ -35,6 +36,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          OneSignal.setExternalUserId("ee20923b-3358-41ba-b8e9-f88d007ca024")
         return true
     }
+    
+    func requestAppTrackingPermission() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                    // Kullanıcı izni verdi, reklam kimliğini almak için kullanabilirsiniz.
+                    let adIdentifier = ASIdentifierManager.shared().advertisingIdentifier
+                    print("Advertising Identifier: \(adIdentifier)")
+                case .denied:
+                    // Kullanıcı izin vermedi.
+                    print("App Tracking Transparency permission denied.")
+                case .notDetermined:
+                    // Kullanıcı henüz bir seçim yapmadı.
+                    print("App Tracking Transparency permission not determined.")
+                case .restricted:
+                    // Kullanıcı cihazında izni kısıtlı.
+                    print("App Tracking Transparency permission restricted.")
+                @unknown default:
+                    break
+                }
+            }
+        } else {
+            // iOS 14 öncesi sürümlerde kullanıcı iznini almak gerekmez, bu yüzden devam edebilirsiniz.
+            let adIdentifier = ASIdentifierManager.shared().advertisingIdentifier
+            print("Advertising Identifier: \(adIdentifier)")
+        }
+    }
+
 
     // MARK: UISceneSession Lifecycle
 

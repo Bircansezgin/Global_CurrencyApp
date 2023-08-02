@@ -38,11 +38,11 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Calculate"/>
                                 <connections>
                                     <action selector="getRatesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhi-Cl-s3R"/>
-                                    <segue destination="3WL-OF-uy1" kind="show" id="1ge-dK-4AW"/>
+                                    <segue destination="3WL-OF-uy1" kind="show" id="Bhm-td-LLT"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5vh-Lf-lRH">
-                                <rect key="frame" x="0.0" y="177.33333333333331" width="430" height="657.66666666666674"/>
+                                <rect key="frame" x="0.0" y="177.66666666666669" width="430" height="657.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for money here!" id="lcx-cf-ntj">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
@@ -113,7 +113,7 @@
                                 <rect key="frame" x="196.66666666666666" y="447.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Update Loading!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-wc-H59">
-                                <rect key="frame" x="107" y="147.33333333333334" width="216" height="21.666666666666657"/>
+                                <rect key="frame" x="57" y="147.33333333333334" width="316" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,12 +125,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uAC-cq-Eg4" secondAttribute="trailing" constant="73" id="15O-4k-skh"/>
                             <constraint firstItem="dvA-ML-d0S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9fu-ky-dO6"/>
                             <constraint firstItem="5vh-Lf-lRH" firstAttribute="top" secondItem="9N7-wc-H59" secondAttribute="bottom" constant="8.3333333333333428" id="B2n-pS-1NE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9N7-wc-H59" secondAttribute="trailing" constant="107" id="Kl2-Ri-kBn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9N7-wc-H59" secondAttribute="trailing" constant="57" id="Kl2-Ri-kBn"/>
                             <constraint firstItem="dvA-ML-d0S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qch-QK-B2e"/>
                             <constraint firstItem="5vh-Lf-lRH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VLV-qe-i0M"/>
                             <constraint firstItem="9N7-wc-H59" firstAttribute="top" secondItem="up1-gM-n6o" secondAttribute="bottom" constant="7.3300000000000001" id="VbC-Pa-mJR"/>
                             <constraint firstItem="5vh-Lf-lRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W7T-nE-lco"/>
-                            <constraint firstItem="9N7-wc-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="ecE-hH-9NQ"/>
+                            <constraint firstItem="9N7-wc-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="ecE-hH-9NQ"/>
                             <constraint firstItem="uAC-cq-Eg4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="f3z-1A-5FM"/>
                             <constraint firstItem="uAC-cq-Eg4" firstAttribute="top" secondItem="5vh-Lf-lRH" secondAttribute="bottom" constant="37" id="fz0-jJ-Mnu"/>
                             <constraint firstAttribute="bottom" secondItem="uAC-cq-Eg4" secondAttribute="bottom" constant="25" id="kjk-6b-Ub6"/>
@@ -154,12 +154,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002.3255813953488" y="2.5751072961373391"/>
+            <point key="canvasLocation" x="2001" y="3"/>
         </scene>
-        <!--View Controller-->
+        <!--Calculate Currency View Controller-->
         <scene sceneID="Djy-cq-EpQ">
             <objects>
-                <viewController id="3WL-OF-uy1" sceneMemberID="viewController">
+                <viewController id="3WL-OF-uy1" customClass="CalculateCurrencyViewController" customModule="DovizConvert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mHt-C7-nZk">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,8 +281,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zYw-pk-9Zq">
-                                <rect key="frame" x="20" y="271" width="390" height="391"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zYw-pk-9Zq">
+                                <rect key="frame" x="0.0" y="271" width="430" height="391"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.25" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Loading." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nn-gQ-Ohr">
                                 <rect key="frame" x="61" y="868" width="308" height="30"/>
@@ -297,13 +297,13 @@
                         <viewLayoutGuide key="safeArea" id="nDN-g9-oe9"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zYw-pk-9Zq" firstAttribute="width" secondItem="Y4f-rk-yLU" secondAttribute="width" constant="-40" id="0w9-yZ-MoD"/>
+                            <constraint firstItem="zYw-pk-9Zq" firstAttribute="width" secondItem="Y4f-rk-yLU" secondAttribute="width" id="0w9-yZ-MoD"/>
                             <constraint firstItem="nDN-g9-oe9" firstAttribute="bottom" secondItem="zYw-pk-9Zq" secondAttribute="bottom" constant="236" id="AKY-9d-7Lq"/>
                             <constraint firstItem="7Nn-gQ-Ohr" firstAttribute="leading" secondItem="nDN-g9-oe9" secondAttribute="leading" constant="61" id="Jwc-w1-jrD"/>
                             <constraint firstItem="zYw-pk-9Zq" firstAttribute="top" secondItem="nDN-g9-oe9" secondAttribute="top" constant="168" id="M5u-bX-xK1"/>
-                            <constraint firstItem="zYw-pk-9Zq" firstAttribute="leading" secondItem="nDN-g9-oe9" secondAttribute="leading" constant="20" id="Wjt-Ck-s2c"/>
+                            <constraint firstItem="zYw-pk-9Zq" firstAttribute="leading" secondItem="nDN-g9-oe9" secondAttribute="leading" id="Wjt-Ck-s2c"/>
                             <constraint firstItem="7Nn-gQ-Ohr" firstAttribute="centerX" secondItem="zYw-pk-9Zq" secondAttribute="centerX" id="fnN-HA-LTh"/>
-                            <constraint firstItem="zYw-pk-9Zq" firstAttribute="trailing" secondItem="nDN-g9-oe9" secondAttribute="trailing" constant="-20" id="nFA-lc-Nfl"/>
+                            <constraint firstItem="zYw-pk-9Zq" firstAttribute="trailing" secondItem="nDN-g9-oe9" secondAttribute="trailing" id="nFA-lc-Nfl"/>
                             <constraint firstItem="7Nn-gQ-Ohr" firstAttribute="bottom" secondItem="nDN-g9-oe9" secondAttribute="bottom" id="tvd-uC-lfK"/>
                         </constraints>
                     </view>
@@ -324,7 +324,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="m0L-OD-PMw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GPT-ZR-ZdJ">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="104.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
